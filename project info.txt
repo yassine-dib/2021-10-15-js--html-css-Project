@@ -1,0 +1,46 @@
+                                                                               The project Information
+                                                                              #########################
+                                          ####The objective of the project is to build a dynamic web application with JavaScript, HTML and CSS###
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+1 Identify one or more web services to retrieve information from
+----------------------------------------------------------------
+1 Feel free to use Insomnia to see what information the interesting web service or services contains.
+
+2 At least one web service information must be consumed via JavaScript ( fetch, Axios or similar) as part of this project.
+
+3 Preferably avoid web services with CORS problems .
+
+ Unfortunately, some servers are not configured in such a way that web applications can retrieve information from them.
+ This is because CORS problems can occur when we try to make fetchcalls to certain web services.
+ The following code (for a JSON-GET call with fetch) can be used to see if CORS problems occur (replace the points with the web service you want to try using):
+
+fetch('...')
+  .then((response) => response.json())
+  .then((result) => {
+    console.log(result)
+  })
+If the desired result is displayed in the console, then it is possible to retrieve information from the web service.
+If CORS problems occur, a browser extension such as CORS Everywhere can be used to "turn off" these CORS problems.
+ However, the website will then only work for users who have the browser extension installed .
+ This makes the project more difficult to publish if desired, but publishing is not a requirement in this project.
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+2 Create a website with a layout
+--------------------------------
+1 The website must contain at least two web pages (HTML files)
+2 Create a layout for a website that can present the information recieved from the web service / services.
+3 CSS (or Sass / similar) must be used to create some kind of design
+4  use the grid system from Bootstrap , Flexbox,or Grid, or similar, to create a layout.
+5 it is not enough to use a CSS framework such as Bootstrap, but "regular" CSS code must be included in some form.
+6 The website does not have to be responsive but if u want u can make it responsive it your chose 
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+3 Use the node and event modules to "link" the website with the information from the web service
+------------------------------------------------------------------------------------------------
+
+1 Combine the website you have built with the theory from the first part of the course (JavaScript, document nodes and events) to create a dynamic web application
+2  JavaScript frameworks (such as Vue.js or React) may not be used. However, TypeScript may be used.
+3 Display information from the web service / services on the website. As an absolute minimum, ten values need to be displayed
+4 The submission must be interactive in that some kind of event is handled in a meaningful way. DOMContentLoadedThe / loadevent type does not count
